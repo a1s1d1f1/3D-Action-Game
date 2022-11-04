@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         playerInput.MoveEvent += OnMove;
         playerInput.AttackEvent += OnAttack;
-        playerInput.AttackCanceledEvent += OffAttack;
+        //playerInput.AttackCanceledEvent += OffAttack;
     }
 
     void Update()
@@ -37,8 +37,8 @@ public class PlayerController : MonoBehaviour
         inputAttackValue = isPressing;
     }
 
-    void OffAttack(bool isReleased)
-    {
-        inputAttackValue = isReleased;
-    }
+    //void OffAttack(bool isReleased)
+    //{
+    //    inputAttackValue = isReleased;
+    //}
 }
